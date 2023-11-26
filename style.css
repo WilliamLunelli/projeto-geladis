@@ -1,0 +1,548 @@
+*{
+
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+    }
+    
+    section{
+    
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F3F9FE;
+    }
+    
+    header{
+    
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    header .toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        position: fixed;
+        top: 20px;
+        left: 0px;
+        z-index: 1000; /* Ajuste a propriedade z-index para um valor alto o suficiente */
+    }
+    
+    header .logo {
+        position: relative;
+        max-width: 15%; /* Ajuste a largura conforme necessário */
+    }
+    
+    header ul {
+        display: none;
+        position: absolute;
+        top:55px; /* Ajuste conforme necessário */
+        left: 0;
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    header ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header ul li {
+        margin: 10px 0;
+    }
+    
+    
+    header ul li{
+    
+        list-style: none;
+    
+    }
+    
+    header ul li a {
+    
+        display: inline-block;
+        color: #333;
+        font-weight: 400;
+        margin-left: 40px;
+        text-decoration: none;
+    
+    }
+    
+    .content{
+    
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .content .textBox {
+    
+        position: relative;
+        max-width: 600px;
+    
+    }
+    
+    .content .textBox h2 {
+    
+        color:#333;
+        font-size: 4em;
+        line-height: 1.4em;
+        font-weight:500 ;
+    
+    }
+    
+    .content .textBox h2 span{
+    
+        color: #5ecfe1;
+        font-size: 1.2em;
+        font-weight: 900;
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #000;
+    
+    }
+    
+    .content .textBox p{
+    
+        color: #333;
+    
+    }
+    
+    .content .textBox a{
+    
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px ;
+        background:#017143;
+        color: #fff;
+        border-radius: 40px;
+        font-weight:500x ;
+        letter-spacing: 1px;
+        text-decoration: none;
+    
+    }
+    
+    .content .imgBox{
+    
+        width:600px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right:50px ;
+        margin-top:50px;
+    }
+    
+    .content .imgBox img{
+    
+        max-width: 340px;
+    
+    
+    }
+    
+    .thumb{
+    
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+    
+    }
+    
+    .thumb li {
+    
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    
+    }
+    
+    .thumb li:hover{
+    
+        transform: translateY(-15px);
+    
+    }
+    
+    .thumb li img{
+    
+        max-width: 60px;
+    
+    }
+    
+    .sci{
+    
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+    .sci li {
+    
+        list-style: none;
+    
+    }
+    
+    .sci li a {
+    
+        display: inline-block;
+        margin: 5px 0;
+        transform: scale(0.6);
+        filter: invert(1);
+    
+    }
+    
+    .circle{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #017143;
+        clip-path: circle(600px at right 800px);
+    
+    }
+    
+    /*inicio do conteúdo*/
+    
+    
+    .conteudo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .responsive-img {
+        width: 100%; /* Ou ajuste conforme necessário */
+        margin-top: 15em; /* Ajuste conforme necessário para o espaçamento desejado */
+        justify-content: space-around;
+    }
+    
+    .img-content-box {
+        width: 100%;
+        max-width: 80%;
+        height: 685px;
+        margin-left: 20px;
+        
+    }
+    
+    .box {
+        position: relative;
+        right: 40px;
+        width: 30%; /* Ou ajuste conforme necessário */
+        margin-top: 15em; /* Ajuste conforme necessário para o espaçamento desejado */
+    }
+    
+    
+    
+    @media (max-width: 991px) {
+        header {
+            padding: 20px;
+        }
+    
+        header .logo {
+            position: relative;
+            min-width: 110px;
+        }
+    
+        header .toggle {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 40px;
+            cursor: pointer;
+            background: url(img/menu.png);
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: invert(1);
+            z-index: 31;
+        }
+    
+        header .toggle.active {
+            position: fixed;
+            right: 20px;
+            background: url(img/close.png);
+            background-size: 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        header ul {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            text-align: center;
+            z-index: 1;
+        }
+    
+        header ul.active {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        header ul li {
+            margin: 10px 0;
+        }
+    
+        .toggle {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background: url(img/menu.png);
+            background-size: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: invert(1);
+            z-index: 31;
+        }
+    
+        header ul .navigation .active {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            z-index: 30;
+        }
+    
+        header ul li a {
+            font-size: 1.5em;
+            margin: 5px 0;
+        }
+    
+        section {
+            padding: 20px 20px 120px;
+        }
+    
+        .content {
+            flex-direction: column;
+            margin-top: 120px;
+        }
+    
+        .content .textBox h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+    
+        .content .textBox {
+            max-width: 100%;
+        }
+    
+        .content .imgBox {
+            max-width: 100%;
+            justify-content: center;
+        }
+    
+        .content .imgBox img {
+            max-width: 300px;
+        }
+    
+        .circle {
+            clip-path: circle(400px at center bottom);
+        }
+    
+        .thumb li img {
+            max-width: 40px;
+        }
+    
+        .sci {
+            background: #017143;
+            right: 0;
+            width: 50px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    
+        .conteudo {
+            flex-direction: row; /* Mude a direção da flexbox para lado a lado */
+            align-items: flex-start; /* Alinhe os itens no início da linha */
+            justify-content: space-around; /* Adicione espaço entre os itens */
+        }
+    
+        .img-content-box {
+            max-width: 100%;
+            margin-top: -60px;
+            width: 100%;
+            height: 300px;
+            margin-left: 0;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            width:80% ;
+            position: relative;
+            right: 0;
+            margin-top: 1em;
+            background-color: #017143;
+            color: white;
+        }
+
+        .responsive-img {
+            width: 80%; /* Ou ajuste o valor conforme necessário */
+
+    }
+}
+    
+    
+    
+    @media (min-width: 992px) {
+    
+        header .logo {
+            position: relative;
+            min-width: 110px;
+        }   
+    
+        header .toggle {
+            display: none;
+        }
+    
+        header ul {
+            display: flex !important;
+            position: relative;
+            background: none;
+            align-items: center;
+            margin-top: -8em; /* Ajuste o valor conforme necessário para alinhar com a logo */
+        }
+    
+    
+        header ul.active {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        header ul li {
+            margin: 0 20px;
+        }
+    
+        header ul li a {
+            font-size: 1em;
+            margin-left: 10;
+            color: #333;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+    
+        header ul li a:hover {
+            color: #017143;
+        }
+    
+        header ul .navigation .active {
+            position: relative;
+            left: auto;
+            top: auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+            background: none;
+            z-index: auto;
+        }
+    
+        header ul .navigation .active li {
+            margin: 0 10px;
+        }
+    
+        .conteudo {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    
+        .responsive-img {
+            width: 50%; /* Ou ajuste o valor conforme necessário */
+            height: auto;
+            margin-top: 12em; /* Ajuste conforme necessário para o espaçamento desejado */
+        }
+
+        .responsive-img img {
+            display: block;
+            width: 100%;
+        }
+
+        .img-content-box {
+            width: 100%;
+            margin-left: 20px;
+            height: 30em;
+        }
+        
+    
+        .box {
+            width: 40%; /* Ou ajuste o valor conforme necessário */
+            background-color: #017143;
+            color: white;
+            margin-top: 11em;
+            padding: 20px;
+        }
+    
+        .box h1{
+            font-size: 3em;
+        }
+    
+        .box p {
+            font-size: 1.3em;
+        }
+    }
+    
+
+    @media (max-width:575px){
+        .img-content-box {
+            max-width: 100%;
+            width: 100%;
+            margin-left: 0;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            width:80% ;
+            position: relative;
+            right: 0;
+            margin-top: 1em;
+        }
+
+        .responsive-img {
+            width: 80%; /* Ou ajuste o valor conforme necessário */
+
+    }
+
+}
