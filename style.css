@@ -555,5 +555,9 @@
         transform: scale(1.01);
     }
     /* Made by https://github.com/Matheus4ugusto */
-}
 
+}
+/* como fazer pull requests */
+/* commitar numa branch diferente da main, realizar o git push origin [nome da branch] e ir até o github */
+/* ao chegar no github, abrir uma PR(pull request) com o ponto de partida sendo a branch que foi commitada e o ponto de chegada a main */
+/* ATENÇÃO, NUNCA FAÇA A PR PARA A MAIN OU PARA A PRODUCTION BRANCH SEM ANTES REALIZAR TODOS OS TESTE POSSIVEIS, "Um commit errado pode afetar mais de 3 milhões de pessoas" */
