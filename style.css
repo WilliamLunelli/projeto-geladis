@@ -546,3 +546,14 @@
     }
 
 }
+
+#img_SobreNos, #box__sobreNos{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10px;
+    &:hover{    
+        transition: all .5s;
+        transform: scale(1.01);
+    }
+    /* Made by https://github.com/Matheus4ugusto */
+}
+
