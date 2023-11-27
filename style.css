@@ -413,6 +413,24 @@
             color: white;
         }
 
+        .box h1{
+            background-color: #017143;
+            border-radius: 10px;
+
+        }
+
+        .box p{
+            margin-top: 5px;
+            background-color: white;
+            color: #017143;
+        }
+
+        .box br {
+            background-color: white;
+            color: white;
+        }
+
+
         .responsive-img {
             width: 80%; /* Ou ajuste o valor conforme necessário */
 
@@ -508,10 +526,20 @@
     
         .box {
             width: 40%; /* Ou ajuste o valor conforme necessário */
-            background-color: #017143;
             color: white;
             margin-top: 11em;
             padding: 20px;
+        }
+
+        .box h1{
+            background-color: #017143;
+            border-radius: 10px;
+
+        }
+
+        .box p{
+            background-color: white;
+            color: #017143;
         }
     
         .box h1{
@@ -540,6 +568,23 @@
             margin-top: 1em;
         }
 
+        .box h1{
+            background-color: #017143;
+            border-radius: 10px;
+
+        }
+
+        .box p{
+            margin-top: 5px;
+            background-color: white;
+            color: #017143;
+        }
+
+        .box br {
+            background-color: white;
+            color: white;
+        }
+
         .responsive-img {
             width: 80%; /* Ou ajuste o valor conforme necessário */
 
@@ -554,7 +599,6 @@
         transition: all .5s;
         transform: scale(1.01);
     }
-    /* Made by https://github.com/Matheus4ugusto */
 
 }
 /* como fazer pull requests */
