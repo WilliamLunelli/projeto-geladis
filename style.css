@@ -304,6 +304,7 @@
         display: flex;
         margin-bottom: 50px;
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        border: #017143 2px solid;
         &:hover{    
             transition: all .5s;
             transform: scale(1.01);
@@ -315,6 +316,7 @@
         display: flex;
         margin-bottom: 50px;
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        border: #017143 2px solid;
         &:hover{    
             transition: all .5s;
             transform: scale(1.01);
@@ -322,7 +324,7 @@
     }
 
     .produto-2 img{
-        width:90%;
+        width:80%;
     }
 
     .produto-3{
@@ -330,6 +332,7 @@
         display: flex;
         margin-bottom: 50px;
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        border: #017143 2px solid;
         &:hover{    
             transition: all .5s;
             transform: scale(1.01);
@@ -344,6 +347,7 @@
         text-align: center;
         align-content: center;
         color: #017143;
+        padding: 5px;
     }
 
     .all-products h1{
