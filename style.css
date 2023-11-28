@@ -41,6 +41,7 @@
         left: 0px;
         z-index: 1000; /* Ajuste a propriedade z-index para um valor alto o suficiente */
     }
+
     
     header .logo {
         position: relative;
@@ -529,6 +530,7 @@
             color: white;
             margin-top: 11em;
             padding: 20px;
+            border: 2px solid #017143;
         }
 
         .box h1{
@@ -548,6 +550,11 @@
     
         .box p {
             font-size: 1.3em;
+        }
+
+        p{
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     }
     
@@ -571,11 +578,9 @@
         .box h1{
             background-color: #017143;
             border-radius: 10px;
-
         }
 
         .box p{
-            margin-top: 5px;
             background-color: white;
             color: #017143;
         }
@@ -600,6 +605,38 @@
         transform: scale(1.01);
     }
 
+}
+
+
+.bg-produto{
+    background-image: url(img/wooden.jpg) ;
+    background-repeat: repeat-x;    
+    background-size: cover;
+}
+
+.logo-produtos{
+    margin-top: 15em;
+    margin-left: 3em;
+    background-color: #5ecfe1;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-content: center;
+    background-image: url(img/gela-gela.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 650px;
+}
+
+.info-produtos h2{
+    color: white;
+    font-weight: 400;
+}
+
+.info-produtos h1{
+    color: #017143;
+    font-weight: 900;
 }
 /* como fazer pull requests */
 /* commitar numa branch diferente da main, realizar o git push origin [nome da branch] e ir até o github */
