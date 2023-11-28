@@ -146,13 +146,12 @@
         width:600px;
         display: flex;
         justify-content: flex-end;
-        padding-right:50px ;
-        margin-top:50px;
+        margin-top:180px;
     }
     
     .content .imgBox img{
     
-        max-width: 340px;
+        max-width: 350px;
     
     
     }
@@ -161,7 +160,7 @@
     
         position: absolute;
         left: 50%;
-        bottom: 20px;
+        bottom: 0px;
         transform: translateX(-50%);
         display: flex;
     
@@ -185,7 +184,8 @@
     
     .thumb li img{
     
-        max-width: 60px;
+        width: 100%;
+        max-width: 100px;
     
     }
     
