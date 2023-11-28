@@ -258,7 +258,102 @@
         width: 30%; /* Ou ajuste conforme necessário */
         margin-top: 15em; /* Ajuste conforme necessário para o espaçamento desejado */
     }
-    
+
+    .img-logo-prod{
+        margin-top: 14em;
+        background-color: #F3F9FE;
+        width: 100%;
+        border-radius: 100px;
+        flex-direction: row;
+        margin-bottom: 2em;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        &:hover{    
+        transition: all .5s;
+        transform: scale(1.01);
+        }
+    }
+
+    .img-logo-real-prod{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 4em;
+        width: 100%;
+    }
+
+    .img-logo-real-prod img{
+        display: flex;
+        justify-content: flex-end;
+        width: 30vw;
+    }
+
+
+    .img-logo-real-prod h1{
+        font-family: 'Kdam Thmor Pro';
+        font-weight: 10;
+        display: flex;
+        align-items: center;
+        font-size: 5vw;
+        width:30%;
+        margin-left: 25px;
+        color: #017143;
+        text-align: left;
+    }
+
+    .produto-1{
+        width: 30%;
+        display: flex;
+        margin-bottom: 50px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        &:hover{    
+            transition: all .5s;
+            transform: scale(1.01);
+            }
+    }
+
+    .produto-2{
+        width: 30%;
+        display: flex;
+        margin-bottom: 50px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        &:hover{    
+            transition: all .5s;
+            transform: scale(1.01);
+            }
+    }
+
+    .produto-2 img{
+        width:90%;
+    }
+
+    .produto-3{
+        width: 30%;
+        display: flex;
+        margin-bottom: 50px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        &:hover{    
+            transition: all .5s;
+            transform: scale(1.01);
+            }
+    }
+
+    .all-products{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 30em;
+        text-align: center;
+        align-content: center;
+        color: #017143;
+    }
+
+    .all-products h1{
+        font-size: 1em;
+        background-color: #fff; 
+        display: flex;
+        align-items: center;
+
+    }
+
     
     
     @media (max-width: 991px) {
@@ -410,7 +505,7 @@
             position: relative;
             right: 0;
             margin-top: 1em;
-            background-color: #017143;
+            background-color: #A5A5AF;
             color: white;
         }
 
@@ -435,6 +530,23 @@
         .responsive-img {
             width: 80%; /* Ou ajuste o valor conforme necessário */
 
+    }
+
+    .img-logo-prod img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-products{
+        display: flex;
+        justify-content:start;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    .all-products img{
+        width: 200%;
     }
 }
     
@@ -611,22 +723,6 @@
 .bg-produto{
     background-image: url(img/wooden.jpg) ;
     background-repeat: repeat-x;    
-    background-size: cover;
-}
-
-.logo-produtos{
-    margin-top: 15em;
-    margin-left: 3em;
-    background-color: #5ecfe1;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    align-content: center;
-    background-image: url(img/gela-gela.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 50%;
-    height: 650px;
 }
 
 .info-produtos h2{
@@ -642,3 +738,5 @@
 /* commitar numa branch diferente da main, realizar o git push origin [nome da branch] e ir até o github */
 /* ao chegar no github, abrir uma PR(pull request) com o ponto de partida sendo a branch que foi commitada e o ponto de chegada a main */
 /* ATENÇÃO, NUNCA FAÇA A PR PARA A MAIN OU PARA A PRODUCTION BRANCH SEM ANTES REALIZAR TODOS OS TESTE POSSIVEIS, "Um commit errado pode afetar mais de 3 milhões de pessoas" */
+
+
