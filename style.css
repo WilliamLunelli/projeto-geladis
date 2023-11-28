@@ -357,7 +357,64 @@
 
     }
 
+    .title{
+        color: #F3F9FE;
+        background-color: #017143;
+        font-size: 1.2em;
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        margin-top: 10em;
+    }
+
+    .box-contact{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email,
+    .telefone,
+    .whatsapp {
+        width: 100%; /* ou ajuste conforme necessário */
+        height: 10em; /* ou ajuste conforme necessário */
+        background-color: #F3F9FE; /* ou a cor desejada */
+        border: 1px solid #017143; /* ou a cor desejada */
+        border-radius: 10px; /* ou ajuste conforme necessário */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        /* Adicione estilos adicionais conforme necessário */
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        &:hover{    
+        transition: all .5s;
+        transform: scale(1.01);
+        }
+    }
     
+    .email img,
+    .telefone img,
+    .whatsapp img {
+        width: 50%; /* ou ajuste conforme necessário */
+    }
+    
+    /* Adicione estilos específicos para cada ícone, se necessário */
+    .email {
+        /* Estilos específicos para a box de e-mail */
+    }
+    
+    .telefone {
+        /* Estilos específicos para a box de telefone */
+    }
+    
+    .whatsapp {
+        /* Estilos específicos para a box de WhatsApp */
+    }
+
     
     @media (max-width: 991px) {
         header {
@@ -550,6 +607,10 @@
 
     .all-products img{
         width: 200%;
+    }
+
+    .box-contact{
+        flex-direction: column;
     }
 }
     
