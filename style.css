@@ -6,6 +6,7 @@
     font-family: 'poppins', sans-serif;
     
     }
+
     
     section{
     
@@ -123,6 +124,7 @@
     .content .textBox p{
     
         color: #333;
+        line-height: 1.5em;
     
     }
     
@@ -261,15 +263,20 @@
     .img-logo-prod{
         margin-top: 14em;
         background-color: #F3F9FE;
-        width: 100%;
+        width: 90%;
         border-radius: 100px;
         flex-direction: row;
         margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5em;
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
         &:hover{    
         transition: all .5s;
         transform: scale(1.01);
         }
+        
     }
 
     .img-logo-real-prod{
@@ -280,8 +287,6 @@
     }
 
     .img-logo-real-prod img{
-        display: flex;
-        justify-content: flex-end;
         width: 30vw;
     }
 
@@ -592,6 +597,10 @@
 
     }
 
+    .img-logo-prod{
+        margin-left: 1.3em;
+    }
+
     .img-logo-prod img{
         display: flex;
         flex-direction: column;
@@ -726,6 +735,7 @@
     
         .box p {
             font-size: 1.3em;
+            line-height: 1.5em;
         }
 
         p{
@@ -759,6 +769,7 @@
         .box p{
             background-color: white;
             color: #017143;
+            line-height: 1.5em;
         }
 
         .box br {
