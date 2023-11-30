@@ -621,8 +621,12 @@
     .box-contact{
         flex-direction: column;
     }
-}
+
     
+    .img-logo-prod{
+        margin-top:12em
+    }
+ }
     
     
     @media (min-width: 992px) {
